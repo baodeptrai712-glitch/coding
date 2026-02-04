@@ -10,7 +10,7 @@ required_coffee_quantity_for_discount: Final = 25
 
 
 print('''---------------------------------------------
-*** Welcome to Beverage Wholesale  Programn ***
+*** Welcome to Beverage Wholesale  Program ***
 ---------------------------------------------
       ''')
 
@@ -49,7 +49,7 @@ if user_product == "T":
 #Thanks for your business, Good Bye''')
         print("--------------------------------------------------------------------------------------------------------------------")
         print(f'{"Product":<12}{"Qty(Bags/kg)":^20}{"Price before disc":<20}{"Price after disc":<20}{"GST":<12}{"Total price":<12}')
-        print(f'{"Tea":<12}{tea_bags:^20.2f}{tea_price_before_discount:<20.2f}{tea_price_after_discount:<20}{gst_amount:<12.2f}{total_price:<12.2f}')
+        print(f'{"Tea":<12}{tea_bags:^20}{tea_price_before_discount:<20.2f}{tea_price_after_discount:<20.2f}{gst_amount:<12.2f}{total_price:<12.2f}')
         print('''--------------------------------------------------------------------------------------------------------------------
 Thanks for your business, Good Bye''')
 
@@ -82,7 +82,7 @@ elif user_product =="C":
 #Thanks for your business, Good Bye''')
         print("--------------------------------------------------------------------------------------------------------------------")
         print(f'{"Product":<12}{"Qty(Bags/kg)":^20}{"Price before disc":<20}{"Price after disc":<20}{"GST":<12}{"Total price":<12}')
-        print(f'{"Coffee":<12}{coffee_weight:^20.2f}{coffee_price_before_discount:<20.2f}{coffee_price_after_discount:<20}{gst_amount:<12.2f}{total_price:<12.2f}')
+        print(f'{"Coffee":<12}{coffee_weight:^20.2f}{coffee_price_before_discount:<20.2f}{coffee_price_after_discount:<20.2f}{gst_amount:<12.2f}{total_price:<12.2f}')
         print('''--------------------------------------------------------------------------------------------------------------------
 Thanks for your business, Good Bye''')
 

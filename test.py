@@ -67,7 +67,7 @@ elif user_product =="C":
         
         coffee_price_after_discount = coffee_price_before_discount - coffee_discount_amount
         user_province = input("Please enter the 2-letter province abbreviation: ").upper()
-        if user_province == "AB":
+        if user_province == "AB" or "BC":
             gst = 0.05
         elif user_province == "ON":
             gst = 0.13

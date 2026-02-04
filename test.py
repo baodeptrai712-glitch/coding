@@ -9,10 +9,10 @@ required_tea_boxes_for_discount:Final = 10
 required_coffee_quantity_for_discount: Final = 25
 
 
-print('''---------------------------------------------
-*** Welcome to Beverage Wholesale  Program ***
----------------------------------------------
-      ''')
+print("-" * 35)
+print("*** Welcome to Beverage Wholesale  Program ***")
+print("-" * 35)
+
 
 user_product = input('''Please select the type of purchase:
 C: Coffee Beans
@@ -47,11 +47,12 @@ if user_product == "T":
 # Tea           {tea_bags}              {tea_price_before_discount:.2f}                   {tea_price_after_discount:.2f}                        {gst_amount:.2f}           {total_price:.2f}
 #--------------------------------------------------------------------------------------------------------------------
 #Thanks for your business, Good Bye''')
-        print("--------------------------------------------------------------------------------------------------------------------")
+        print("-" * 40)
         print(f'{"Product":<12}{"Qty(Bags/kg)":^20}{"Price before disc":<20}{"Price after disc":<20}{"GST":<12}{"Total price":<12}')
         print(f'{"Tea":<12}{tea_bags:^20}{tea_price_before_discount:<20.2f}{tea_price_after_discount:<20.2f}{gst_amount:<12.2f}{total_price:<12.2f}')
-        print('''--------------------------------------------------------------------------------------------------------------------
-Thanks for your business, Good Bye''')
+        print("-" * 40)
+        print("Thanks for your business, Good Bye")
+
 
 elif user_product =="C":
      coffee_weight = float(input("Enter the number kilograms (kg) of coffee: "))
@@ -80,11 +81,11 @@ elif user_product =="C":
 #Coffee           {coffee_weight:.2f}              {coffee_price:.2f}                   {coffee_price_after_discount:.2f}                        {gst_amount:.2f}           {total_price:.2f}
 #--------------------------------------------------------------------------------------------------------------------
 #Thanks for your business, Good Bye''')
-        print("--------------------------------------------------------------------------------------------------------------------")
+        print("-" * 40)
         print(f'{"Product":<12}{"Qty(Bags/kg)":^20}{"Price before disc":<20}{"Price after disc":<20}{"GST":<12}{"Total price":<12}')
         print(f'{"Coffee":<12}{coffee_weight:^20.2f}{coffee_price_before_discount:<20.2f}{coffee_price_after_discount:<20.2f}{gst_amount:<12.2f}{total_price:<12.2f}')
-        print('''--------------------------------------------------------------------------------------------------------------------
-Thanks for your business, Good Bye''')
+        print("-" * 40)
+        print("Thanks for your business, Good Bye")
 
 else:   
     print("Invalid input, you should enter c/C or t/T")
